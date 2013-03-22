@@ -1,0 +1,8 @@
+[settings]
+hostname=# YOUR HOSTNAME #
+def_gh_user=# GITHUB USER NAME #
+def_gh_org=# GITHUB ORGANIZATION REPO BELONGS TO #
+tmp_dir=/tmp
+backup_dir=/tmp
+ssh_pub_key_file=# SSH PUB KEY LOCATION #
+archive_type=# ARCHIVE TYPE (7z|tgz) #

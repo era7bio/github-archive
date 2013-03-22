@@ -1,0 +1,41 @@
+Scripts that can be used for almost complete backup and restore of Github repository using Github API (v3) and git command. Also repositories that belong to organization can be backuped/restored. In any case full privileges to repository are needed.
+
+What is backuped:
+	- main repository
+	- wiki repository
+	- deploy keys
+	- collaborators
+	- teams
+	- forks
+	- hooks
+	- labels
+	- milestones
+	- issues, comments & events
+	- downloads
+
+What can't be restored (mostly because of API limitations):
+	- owner
+	- information about forks
+	- teams privileges
+	- pull requests
+	- watchers
+	- repository/issue events  
+	- original elements id (not important)
+	- original elements creators
+	- original creation/update times of most elements
+	- downloads counts
+
+Although above elements can't be restored, all informations are in backup tarball in _textdump folder.
+
+I tested these scripts on some my repos and everything worked well, but be warned - they may contain errors.
+
+# Requirements #
+	- Linux / BSD (not tested on Windows system)
+	- Python 2.6 or 2.7 (not tested on any other version) 
+	- git, curl, tar, gzip commands
+	- optionally 7z command
+
+# First use #
+	Before first use rename config files (cut .sample from filename) and fill them with proper values.
+
+  
